@@ -1,0 +1,9 @@
+nav {
+	border-radius: 0;
+	&.navbar-inverse {
+		border-radius: 0;
+	}
+	a {
+		cursor: pointer;
+	}
+}

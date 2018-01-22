@@ -1,0 +1,35 @@
+/*!
+*  DTO Layout styles
+*/
+body { overflow-y: scroll; padding-bottom: 30px; width: 100%; overflow-x: hidden; }
+.hide { display: none; }
+code { display: block; }
+.nopad { padding: 0; }
+.err-text { color: red; font-weight: bold; }
+.text-center { text-align: center; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+input.ng-dirty.ng-invalid, textarea.ng-dirty.ng-invalid { border-color: #b94a48; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(185, 74, 72,0.6); box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(185, 74, 72,0.6); }
+
+.sel-placeholder { color: #bbb; }
+
+/* Prevent text selection on certain fields */
+button, .navbar, .footer {
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+
+@media (max-width: 767px) {
+	body {
+		overflow-x: hidden;
+	}
+}
+
+/*Import all the separate styles */
+@import "partials/nav",
+		"partials/content",
+		"partials/loading",
+		"partials/bs-overrides"

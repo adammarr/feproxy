@@ -1,0 +1,38 @@
+{
+    "vppca" : {
+        "application" : "",
+        "page" : {
+            "title" : {
+                "default": "Web-vppca",
+                "home": "VPP Canada",
+                "login": "Login",
+                "error.unknown": "Unknown Error"
+            }
+        },
+        "components" : {
+            "button" : {
+                "next": "Next",
+                "submit": "Submit",
+                "go.back": "Go Back",
+                "search": "Search",
+                "reset": "Reset",
+                "edit": "Edit",
+                "save": "Save",
+                "select": "Select",
+                "continue": "Continue"
+            },
+            "placeholder" : {
+            },
+            "label" : {
+                "email": "Email Address",
+                "password": "Password"
+            }
+        },
+        "errors": {
+          "unknown": "An unknown error has occurred",
+          "login.notfound" : "The Email Address or Password could not be located"
+        },
+        "resources": {
+        }
+      }
+} 

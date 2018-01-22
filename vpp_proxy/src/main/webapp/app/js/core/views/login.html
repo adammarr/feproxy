@@ -1,0 +1,12 @@
+<form ng-submit="login.doLogin()">
+  <div uib-alert ng-if="login.errors.codes['9001']" class="alert-danger">{{ 'vppca.errors.login.notfound' | translate }}</div>
+  <div class="form-group">
+    <label for="email">{{ 'vppca.components.label.email' | translate }}</label>
+    <input type="email" ng-model="login.input.email" class="form-control" id="email" placeholder="{{ 'vppca.components.label.email' | translate }}" required>
+  </div>
+  <div class="form-group">
+    <label for="password">{{ 'vppca.components.label.password' | translate }}</label>
+    <input type="password"  ng-model="login.input.password" class="form-control" id="password" placeholder="{{ 'vppca.components.label.password' | translate }}" required>
+  </div>
+  <button type="submit" class="btn btn-default">{{ 'vppca.components.button.submit' | translate }}</button>
+</form>

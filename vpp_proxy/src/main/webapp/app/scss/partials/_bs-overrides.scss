@@ -1,0 +1,17 @@
+/* bootstrap overrides */
+.btn-primary { background-color: #525252; background-image: none; }
+.btn-primary:hover { background-color: #418DD0; }
+.btn-primary:focus, .btn-primary.focus { color: #fff; background-color: #418DD0; }
+.btn-primary:active, .btn-primary:hover:active { color: #fff; background-color: #418DD0; }
+
+.btn-default { background-color: #ddd; background-image: none; }
+.btn-default:hover { background-color: #ccc; }
+
+.btn { border-width: 0; border-radius: 0; }
+.form-control { border-radius: 0; }
+
+.condense-static-text .form-group { margin-bottom: 0; }
+.form-horizontal .align-form-left .control-label { text-align: left; }
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover{
+	pointer-events:none;
+}

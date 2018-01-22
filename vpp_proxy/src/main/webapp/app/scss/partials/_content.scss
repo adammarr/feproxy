@@ -1,0 +1,154 @@
+/* Primary content and form styles */
+.content-well {
+	&>h2 { margin: 0 0 10px 0; }
+	h3 { margin: 0; }
+	.left-info-box {
+		padding: 10px;
+		background-color: #dde;
+		width: 100%;
+		border-radius: 5px;
+		margin-top: 25px;
+		h3 { color: #fff; text-shadow: 0 -1px 0 #aaa; border-bottom: 1px solid #fff; padding-left: 10px; margin-bottom: 10px; }
+	}
+}
+
+.form-container {
+	border: 1px solid #999;
+    padding-bottom: 10px;
+    &.no-header {
+    	margin-top: 20px;
+    }
+}
+
+.form-header {
+	background-color: #1F4564;
+    margin: 0 0 15px 0;
+    line-height: 35px;
+    color: #fff;
+    text-indent: 20px;
+    &.flush {
+    	margin-bottom: 0;
+    }
+    .filter {
+    	float: right;
+	    position: relative;
+	    top: 6px;
+	    right: 20px;
+	    cursor: pointer;
+    }
+}
+
+.search-options {
+	min-height: 250px;
+	background-color: #1F4564;
+	.search-nav-btn {
+	    background-color: #0d2c46;
+	    line-height: 40px;
+	    border-bottom: 1px solid #235179;
+	    text-indent: 20px;
+	    color: #fff;
+	    cursor: pointer;
+	    &:hover {
+	    	background-color: #394963;
+	    	.fa {
+	    		color: rgba(0,0,0,.4);
+	    		display: inline-block;
+	    	}
+	    }
+	    &.active {
+	    	background-color: #418DD0;
+	    	.fa {
+	    		color: #fff;
+	    		display: inline-block;
+	    	}
+	    }
+	    .fa {
+	    	float: right;
+		    position: relative;
+		    top: 14px;
+		    right: 9px;
+		    display: none;
+	    }
+	}
+}
+
+.multi-button .btn { margin-top: 10px; }
+
+.search-container, .stats-container { width: 100%; overflow: auto; }
+.stats-container { 
+	padding: 1%;
+	position: relative;
+	th {
+	    background-color: #525252;
+	    color: #fff;
+	}
+}
+.search-table {
+	margin-top: 30px;
+	th {
+	    background-color: #525252;
+	    color: #fff;
+	}
+	tbody {
+		tr {
+			background-color: #eee;
+		}
+		tr.clickable {
+			cursor: pointer;
+			background-color: #fff;
+			&:hover {
+				background-color: #ddd;
+			}
+		}
+	}
+}
+
+.faq-group {
+	margin-bottom: 15px;
+	.faq-i {
+		text-align: right;
+		font-weight: bold;
+	}
+	.faq-q {
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 767px) {
+	.form-container {
+    	border-width: 0;
+	}
+
+	button.btn, a.btn { width: 100%; }
+
+	.search-options {
+		min-height: auto;
+		max-height: 0;
+		overflow: hidden;
+		-webkit-transition: max-height 300ms ease-in-out;
+		-moz-transition: max-height 300ms ease-in-out;
+		-o-transition: max-height 300ms ease-in-out;
+		transition: max-height 300ms ease-in-out;
+		&.active {
+			max-height: 250px;
+		}
+	}
+}
+
+.recall-box {
+	
+	border: solid 1px #CC0000;
+    margin: 10px 0px 10px 0px;
+    font-size: 19px;
+    color: #CC0000;
+
+    .recall-text {
+    	margin: 10px;
+
+    	a {
+    		color: #CC0000;
+    		text-decoration: underline;
+    	}
+    }
+
+}

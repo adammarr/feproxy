@@ -1,0 +1,12 @@
+{
+	"errors" : {
+		"2001" : "{{label}} is required",
+		"2002" : "{{label}} is invalid",
+		"2003" : "{{label1}} must match {{label2}}",
+		"9404" : "The URL requested could not be found",
+		"9000" : "Unknown Error",
+		"9001" : "Invalid Request",
+		"9002" : "Unauthorized Access",
+		"9003" : "Forbidden Access"
+	}
+}

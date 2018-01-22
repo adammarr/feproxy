@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="index" lang="en" ng-app="app">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="/">
+		<title>{{pageTitle | translate}}</title>
+		<!-- bower:css -->
+		<link rel="stylesheet" href="dist/vendor-css/bootstrap.min.css">
+		<link rel="stylesheet" href="dist/vendor-css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="dist/vendor-css/font-awesome.min.css">
+		<!-- endinject -->
+		<!-- app:css -->
+		<link rel="stylesheet" href="dist/css/main-c7bba92918.css">
+		<!-- endinject -->
+		
+		<link rel="shortcut icon" href="favicon.ico?v=2.0">
+	</head>
+	<body ng-cloak translate-cloak class="align-pad">
+		<ng-include src="'app/js/core/views/nav.html'"></ng-include>
+
+		<div class="container">
+			<div ui-view class="main-cont-ani" autoscroll="true"></div>
+		</div>
+		
+		
+		<div id="loading-back" class="{{ {true: 'active'}[loadingService.count > 0] }}">
+			<div id="loading-ico"></div>
+		</div>
+		
+		<script>
+			/** debug:js */
+			window.ngDebugEnabled = true;
+			/** endinject */
+		</script>
+		<!-- bower:js -->
+		<script src="dist/vendor-js/jquery.min.js"></script>
+		<script src="dist/vendor-js/jquery.maskedinput.min.js"></script>
+		<script src="dist/vendor-js/angular.min.js"></script>
+		<script src="dist/vendor-js/angular-sanitize.min.js"></script>
+		<script src="dist/vendor-js/angular-resource.min.js"></script>
+		<script src="dist/vendor-js/angular-animate.min.js"></script>
+		<script src="dist/vendor-js/angular-messages.min.js"></script>
+		<script src="dist/vendor-js/angular-ui-router.min.js"></script>
+		<script src="dist/vendor-js/bootstrap.min.js"></script>
+		<script src="dist/vendor-js/ui-bootstrap.min.js"></script>
+		<script src="dist/vendor-js/ui-bootstrap-tpls.min.js"></script>
+		<script src="dist/vendor-js/angular-fontawesome.min.js"></script>
+		<script src="dist/vendor-js/angular-translate.min.js"></script>
+		<script src="dist/vendor-js/angular-translate-storage-local.min.js"></script>
+		<script src="dist/vendor-js/angular-translate-loader-partial.min.js"></script>
+		<script src="dist/vendor-js/angulartics.min.js"></script>
+		<script src="dist/vendor-js/angulartics-ga.min.js"></script>
+		<script src="dist/vendor-js/moment.min.js"></script>
+		<script src="dist/vendor-js/mask.min.js"></script>
+		<script src="dist/vendor-js/ua-parser.min.js"></script>
+		<script src="dist/vendor-js/angular-mocks.js"></script>
+		<!-- endinject -->
+		<!-- app:js -->
+		<script src="app/js/core/core.module.js"></script>
+		<script src="app/js/site.js"></script>
+		<script src="app/js/core/directives/loyMatch.directive.js"></script>
+		<script src="app/js/core/directives/mask.directive.js"></script>
+		<script src="app/js/core/directives/translateElem.directive.js"></script>
+		<script src="app/js/core/directives/translateHref.directive.js"></script>
+		<script src="app/js/core/filters/fmtPhone.filter.js"></script>
+		<script src="app/js/core/filters/pluralize.filter.js"></script>
+		<script src="app/js/core/filters/remove.filter.js"></script>
+		<script src="app/js/core/filters/startFrom.filter.js"></script>
+		<script src="app/js/core/filters/translateVars.filter.js"></script>
+		<script src="app/js/core/filters/tsDate.filter.js"></script>
+		<script src="app/js/core/filters/zipCode.filter.js"></script>
+		<script src="app/js/core/controllers/error.ctrl.js"></script>
+		<script src="app/js/core/controllers/home.ctrl.js"></script>
+		<script src="app/js/core/controllers/login.ctrl.js"></script>
+		<script src="app/js/core/controllers/nav.ctrl.js"></script>
+		<script src="app/js/core/models/user.model.js"></script>
+		<script src="app/js/core/services/authInt.service.js"></script>
+		<script src="app/js/core/services/device.service.js"></script>
+		<script src="app/js/core/services/errors.service.js"></script>
+		<script src="app/js/core/services/init.service.js"></script>
+		<script src="app/js/core/services/lang.service.js"></script>
+		<script src="app/js/core/services/loading.service.js"></script>
+		<script src="app/js/core/services/storage.service.js"></script>
+		<script src="app/js/core/services/user.service.js"></script>
+		<!-- endinject -->
+		
+		<!-- wurfl device detection -->
+		<script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+		
+		<!-- analytics setup -->
+		<script>
+			function getGAAccountID() {
+				var dev = ['list','dev.hostnames','here'];
+				if(dev.indexOf(window.location.hostname) !== -1) {
+					return 'DEV-GoogleAnalytics-ID';
+				}
+				return 'PROD-GoogleAnalytics-ID';
+			}
+		</script>
+		<!-- google analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', getGAAccountID(), 'auto');
+		</script>
+		
+		<!-- adobe analytics -->
+	</body>
+</html>
